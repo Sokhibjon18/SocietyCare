@@ -24,7 +24,11 @@
         android:id="@+id/societyHelpFragment"
         android:name="uz.triples.societycare.fragments.SocietyHelpFragment"
         android:label="fragment_society_help"
-        tools:layout="@layout/fragment_society_help" />
+        tools:layout="@layout/fragment_society_help" >
+        <action
+            android:id="@+id/action_societyHelpFragment_to_thanksFragment"
+            app:destination="@id/thanksFragment" />
+    </fragment>
     <fragment
         android:id="@+id/seekForJobFragment"
         android:name="uz.triples.societycare.fragments.SeekForJobFragment"
@@ -34,5 +38,14 @@
         android:id="@+id/sponsoringFragment"
         android:name="uz.triples.societycare.fragments.SponsoringFragment"
         android:label="fragment_sponsoring"
-        tools:layout="@layout/fragment_sponsoring" />
+        tools:layout="@layout/fragment_sponsoring" >
+        <action
+            android:id="@+id/action_sponsoringFragment_to_thanksFragment"
+            app:destination="@id/thanksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thanksFragment"
+        android:name="uz.triples.societycare.fragments.ThanksFragment"
+        android:label="fragment_thanks"
+        tools:layout="@layout/fragment_thanks" />
 </navigation>
