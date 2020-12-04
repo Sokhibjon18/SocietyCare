@@ -7,7 +7,32 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="uz.triples.societycare.HomeFragment"
+        android:name="uz.triples.societycare.fragments.HomeFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_splashFragment_to_societyHelpFragment"
+            app:destination="@id/societyHelpFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_seekForJobFragment"
+            app:destination="@id/seekForJobFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_sponsoringFragment"
+            app:destination="@id/sponsoringFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/societyHelpFragment"
+        android:name="uz.triples.societycare.fragments.SocietyHelpFragment"
+        android:label="fragment_society_help"
+        tools:layout="@layout/fragment_society_help" />
+    <fragment
+        android:id="@+id/seekForJobFragment"
+        android:name="uz.triples.societycare.fragments.SeekForJobFragment"
+        android:label="fragment_seek_for_job"
+        tools:layout="@layout/fragment_seek_for_job" />
+    <fragment
+        android:id="@+id/sponsoringFragment"
+        android:name="uz.triples.societycare.fragments.SponsoringFragment"
+        android:label="fragment_sponsoring"
+        tools:layout="@layout/fragment_sponsoring" />
 </navigation>

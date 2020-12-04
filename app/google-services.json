@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1052587073764",
+    "project_id": "societycare-98a77",
+    "storage_bucket": "societycare-98a77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052587073764:android:83ad440b476170e8278cf1",
+        "android_client_info": {
+          "package_name": "uz.triples.societycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052587073764-evm5pn6ggklcnpdnkjbgodlnj4rafh3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmoOfcjQoRarCmV_be2iopkhTyi_UsYKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052587073764-evm5pn6ggklcnpdnkjbgodlnj4rafh3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".fragments.HomeFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -100,6 +100,8 @@
         android:id="@+id/societyHelpCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
         app:cardCornerRadius="15dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toTopOf="@+id/sponsoringCard"
@@ -144,6 +146,8 @@
         android:layout_height="0dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="8dp"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="@+id/societyHelpCard"
         app:layout_constraintDimensionRatio="h,1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -184,6 +188,8 @@
         android:layout_height="0dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="8dp"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="@id/workCard"
         app:layout_constraintStart_toStartOf="@id/societyHelpCard"
         app:layout_constraintTop_toBottomOf="@id/societyHelpCard"
@@ -192,7 +198,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/card_background"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/orange"
             android:orientation="vertical">
 
             <ImageView
