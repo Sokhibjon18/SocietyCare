@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SocietyCare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="society">Society</string>
+    <string name="care">Care</string>
+    <string name="sample">sample sample sample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample samplesample sample</string>
+    <string name="aboutApp">   Ushbu dastur aholi yashash sharoitini yaxshilashga qaratilgan dastur hisoblanadi.
+       Bizda 3 ta bo’lim mavjud bo’lib, ushbu bo’limlar orqali oila yoki aholining ishga layoqatli lekin ishi mavjud bo’lmagan qatlamiga ijtimoiy yordam berish hamda ish bilan ta’milash imkoniyatlariga ega bo’lasiz </string>
+    <string name="itPark">Biz IT sohasidagi global bozorga yoʻnaltirilgan startap loyihalarini qidirmoqdamiz. Agar siz bizning taʼriflarga mos kelsangiz, unda tadbirkorga oʻz kompaniyasini yaratish va boshqarish uchun zarur boʻlgan koʻnikmalarni egallash uchun uch oylik dasturimizga qoʻshiling.</string>
+    <string name="uzbekCoders">“Bir million o‘zbek dasturchilari” dasturiga qo‘shiling - bizning ochiq onlayn-platformamizdagi ajoyib bepul kurslar yordamida yuqori malakali dasturchiga aylaning! Hamkorlar yordami bilan taqdim etilgan to‘rtta trekdan birini tanlab, jahon bozorida yuqori talabda bo‘lgan kasbni egallang va orzungizdagi kelajakka qadam qo‘ying!
+</string>
 </resources>
