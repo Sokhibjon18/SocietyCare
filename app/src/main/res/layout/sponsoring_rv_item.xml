@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sponsoringCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        app:cardCornerRadius="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="w, 1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_home__2_"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/nameOrg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img"
+                android:layout_width="wrap_content"
+                android:text="21-sonli Mehribonlik uyi"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintBottom_toTopOf="@id/directorOrg"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/directorOrg"
+                app:layout_constraintTop_toBottomOf="@id/nameOrg"
+                app:layout_constraintStart_toEndOf="@id/img"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:text="Abdug'aniyeva Kimnima kimnimabbalo"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@id/addressOrg"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/addressOrg"
+                app:layout_constraintTop_toBottomOf="@id/directorOrg"
+                app:layout_constraintStart_toEndOf="@id/img"
+                android:layout_width="wrap_content"
+                android:text="paloncha joy paloncha uy"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/numberOrg"/>
+
+            <TextView
+                android:id="@+id/numberOrg"
+                app:layout_constraintTop_toBottomOf="@id/addressOrg"
+                app:layout_constraintStart_toEndOf="@id/img"
+                android:layout_width="wrap_content"
+                android:text="paloncha joy paloncha uy"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

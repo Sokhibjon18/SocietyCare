@@ -8,10 +8,9 @@ import android.widget.LinearLayout
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.poor_rv_item.view.*
 import uz.triples.societycare.*
-import uz.triples.societycare.`interface`.ShareMoney
+import uz.triples.societycare.ShareMoney
 import uz.triples.societycare.database.entities.PoorlySupplied
 
 

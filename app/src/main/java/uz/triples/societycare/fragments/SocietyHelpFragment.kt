@@ -16,7 +16,7 @@ import com.nabinbhandari.android.permissions.PermissionHandler
 import com.nabinbhandari.android.permissions.Permissions
 import kotlinx.android.synthetic.main.fragment_society_help.*
 import uz.triples.societycare.R
-import uz.triples.societycare.`interface`.ShareMoney
+import uz.triples.societycare.ShareMoney
 import uz.triples.societycare.adapters.SocietyRV
 import uz.triples.societycare.database.entities.PoorlySupplied
 import uz.triples.societycare.viewModels.SocietyHelpViewModel
@@ -30,6 +30,16 @@ class SocietyHelpFragment : Fragment(R.layout.fragment_society_help) {
 
         val viewModel: SocietyHelpViewModel by viewModels()
         viewModel.update()
+
+        shareBtn.setOnClickListener {
+            val sharingIntent = Intent(Intent.ACTION_SEND)
+            sharingIntent.type = "text/plain"
+            sharingIntent.putExtra(
+                Intent.EXTRA_TEXT,
+                "https://play.google.com/store/apps/details?id=uz.triples.gdgdevfest"
+            )
+            startActivity(Intent.createChooser(sharingIntent, "Share"))
+        }
 
         val adapter = SocietyRV(requireContext(), object : ShareMoney {
             override fun sendMoney(poorlySupplied: PoorlySupplied) {
