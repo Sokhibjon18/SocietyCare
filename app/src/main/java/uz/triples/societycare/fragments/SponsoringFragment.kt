@@ -1,8 +1,10 @@
 package uz.triples.societycare.fragments
 
+import android.Manifest
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -10,6 +12,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.nabinbhandari.android.permissions.PermissionHandler
+import com.nabinbhandari.android.permissions.Permissions
 import kotlinx.android.synthetic.main.fragment_sponsoring.*
 import uz.triples.societycare.R
 import uz.triples.societycare.Sponsoring
@@ -34,6 +38,20 @@ class SponsoringFragment : Fragment(R.layout.fragment_sponsoring) {
                 alertDialog.setMessage("Click API ulanmagan.\nUshbu muassasa bilan bog'lanish uchun ${sponsoring.phone} raqamiga qo'ng'iroq qiling")
                 alertDialog.setPositiveButton("OK") { _, _ ->
 
+                }
+                alertDialog.setNeutralButton("Qo'ng'iroq qilish") { _, _ ->
+                    Permissions.check(
+                        requireContext(),
+                        Manifest.permission.CALL_PHONE,
+                        null,
+                        object : PermissionHandler() {
+                            override fun onGranted() {
+                                val callIntent = Intent(Intent.ACTION_CALL)
+                                callIntent.data =
+                                    Uri.parse("tel:${sponsoring.phone}")
+                                startActivity(callIntent)
+                            }
+                        })
                 }
                 alertDialog.show()
             }

@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.nabinbhandari.android.permissions.PermissionHandler
 import com.nabinbhandari.android.permissions.Permissions
 import kotlinx.android.synthetic.main.fragment_seek_for_job.*
@@ -95,7 +96,8 @@ class SeekForJobFragment : Fragment(R.layout.fragment_seek_for_job) {
                     })
             }
         })
-        workRV.layoutManager = GridLayoutManager(requireContext(), 2)
+        workRV.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        workRV.setHasFixedSize(true)
         workRV.adapter = adapter
 
         GlobalScope.launch {
